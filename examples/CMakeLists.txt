@@ -37,7 +37,7 @@ endfunction()
 
 option(WITH_RIGID "Build the rigid registration example" ON)
 if(${WITH_RIGID})
-    cpd_example(rigid)
+    cpd_example(rigid WITH_DOCOPT)
 endif()
 
 option(WITH_ARTIFICIAL_DISPLACEMENT "Build the artificial displacement example (requires PDAL)" ${PDAL_FOUND})
